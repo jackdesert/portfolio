@@ -1,0 +1,97 @@
+// Background Colors
+$nearly_white_background: #ddf
+$light_background: #ccf
+$medium_background: #aaf
+$dark_background: #99f
+$nearly_black_background: #0e0b50
+$footer_black: #0e0b60
+
+// Text colors
+$dark_text: #112
+$medium_text: #888
+$light_text: #aaa
+$link_text: #aaa
+
+// Padding
+$med_pad: 10px
+$small_pad: 6px
+$large_pad: 20px
+
+// Offsets
+$column_top: 73px
+
+
+
+*
+  font:
+    family: Verdana
+    size: 16px
+  color: $dark_text
+  border-radius: $med_pad
+a
+  color: #55D
+  font-style: italic
+  font-weight: bold
+  line-height: 1.3
+  text-decoration: none
+
+ul
+  margin-left: 34px
+  padding: 2px 0 10px
+  width: 70ex
+li + li
+  padding-top: 2px !important
+body
+  font:
+    family: Verdana
+    size: 10pt
+  background-color: $nearly_black_background
+
+.content
+  background-color: $nearly_black_background
+  width: 800px
+  margin: 0 auto
+
+h1, h2, h3
+  font-weight: bold
+
+h1
+  font-size: 23px
+  text-align: center
+  color: $light_text
+  padding-top: 20px
+
+
+.gig
+  .tech, .features, .description, .check
+    font-size: 16px
+  padding: $med_pad
+  background-color: $light_background
+  margin: 27px
+  .title
+    font-size: 22px
+    padding-bottom: 10px
+  .tech:before
+    content: 'Technologies'
+  .features:before
+    content: 'Features'
+  .features, .tech
+    padding-top: 10px
+  .features:first-line, .tech:first-line, .check:first-line
+    font-weight: bold
+    font-size: 110%
+  .description
+  .check:before
+    content: 'Check it Out'
+  .check
+    .note
+      padding-left: 10px
+      font-size: 90%
+    .demo
+      padding-top: 5px
+    .demo, .source
+      padding-left: 10px 
+    .source ul
+      list-style: none
+      margin-left: 15px
+

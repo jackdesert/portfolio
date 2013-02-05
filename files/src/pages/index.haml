@@ -1,0 +1,140 @@
+:ruby
+  grapevine_demo = '//grapevine.jackdesert.com'
+  day_demo = '//aDayintheLifeof.net'
+  lyxblogger_home = '//lyxblogger.nongnu.org'
+  regi_home = '//hbbostonamc.org/regi'
+  kooji_home= '//evening-mountain-9380.heroku.com'
+  groovetask_home= '//groove.letseatalready.com'
+
+%h1 Portfolio of Jack Desert
+
+.gig
+  .title= link 'the Grapevine (2013)', grapevine_demo 
+  .description A simple message board using Backbone.js
+  .tech 
+    %ul
+      %li Backbone.js
+      %li Rails 3.2
+      %li CoffeeScript
+      %li Rspec
+      %li Sqlite3
+  .features
+    %ul
+      %li Single Page Application (SPA)
+      %li Back-end durability achieved via AJAX calls to Rails controller and sqlite3
+      %li No sign-in required
+      %li Allows creating and editing messages without ever leaving the page
+      %li Remembers which items you've alredy viewed, even if you page refresh
+  .check
+    .demo= link 'Live Demo', grapevine_demo
+    .source= link 'Source Code', '//github.com/jackdesert/grapevine'
+
+
+.gig
+  .title= link 'A Day in the Life (2012)', day_demo
+  .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
+  .tech 
+    %ul
+      %li Rails 
+      %li CoffeeScript
+      %li MongoDB 
+      %li Rspec 
+      %li eLyXer 
+      %li Ebooks
+  .features
+    %ul
+      %li Preview avatar images before submitting profile
+      %li Automatically saves as you type via AJAX
+      %li Manage published/private via AJAX
+      %li Client Side Validations for account creation
+      %li Keeps track of which entries you've read so it can feed you another one in random order (Keeps track even if you're not logged in)
+      %li Export to Ebook (.mobi) format
+  .check
+    .demo 
+      = link 'Live Demo', day_demo
+    .source
+      %b Private Source Code:
+      %ul
+        %li git clone https//git.jackdesert.com/adayinthelifeof.git
+        %li user: okcupid
+        %li password: h9m7xa11e
+
+.gig
+  .title= link 'LyXBLogger (2009-2013)', lyxblogger_home
+  .description A Python plugin for effortlessly publishing from LyX to a Wordpress blog
+  .tech 
+    %ul
+      %li Python 2.7
+      %li Console App
+      %li WordPress
+      %li XMLRPC
+      %li Unit Tests
+      %li OO design
+  .check
+    .demo= link 'Home page', lyxblogger_home 
+    .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo'
+
+.gig
+  .title= link 'REGI (Co-Developer, 2011-2012)', regi_home
+  .description A trip registration system for high risk outdoor adventures. In use by the Hiking and Biking committee of the Boston chapter of the Appalachian Mountain Club.
+  .tech 
+    %ul
+      %li PHP
+      %li Apache Rewrite
+      %li MySQL
+      %li Interaction Design
+      %li CSS3
+  .features
+    %ul
+      %li Users can keep a private profile, viewable only by trip leaders
+      %li Emails leaders when someone signs up for a trip
+      %li Emails participants when they are approved
+      %li Offers a carpooling page only viewable once you're approved
+  .check
+    .demo= link 'Live on the web', regi_home
+    .source= link 'Source Code', '//github.com/jackdesert/REGI'
+
+.gig
+  .title= link 'KOOJI (2012)', kooji_home
+  .description An enhanced trip registration system, intended to replace REGI
+  .tech 
+    %ul
+      %li Rails
+      %li PostgreSQL
+      %li AJAX
+  .features
+    %ul
+      %li More responsive (with fewer page loads) using AJAX for things like approving users
+      %li News feed showing what your most recent activity is (like who you approved for a trip, what you signed up for, when you last updated your profile, etc.)
+      %li Photos of each user, displayable on the carpooling page, so you can get to know people better that you hiked with
+      %li A leader blurb, or philosophy, displayed on each event that leader is associated with. By seeing the leader's name, photo, and philosophy blurb before you even sign up, you have a better sense of whether his/her leadership style will mesh with what you're looking to get out of the adventure
+      %li An enhanced ADMIN page, where you can see all leaders in the system, and easily upgrade them to be admins if you like
+      %li Carpooling page with entries grouped by whether they are offering or soliciting a ride
+      %li Enhanced menus
+      %li Clear delineation of who is the registrar for the event. This allows a user to respond to a system email, and it will go to the registrar for the event. Likewise, if a leader or registrar responds to the email that says "so and so signed up", that email goes to the user who signed up.
+      %li Code is much easier to maintain, since it's written in Rails
+
+  .check
+    .demo
+      = link 'Live demo', kooji_home
+      .note (Heroku app may be sleeping--click again after a minute)
+    .source
+      = link 'Source Code', '//github.com/jackdesert/kooji'
+      .note The Readme will tell you how to log in
+
+.gig
+  .title= link 'GrooveTask (2008)', groovetask_home
+  .description A sophisticated to-do list that is aware of both task priority and the type of energy required to succeed. Based on Brian Tracy's book, "Eat That Frog".
+  .tech 
+    %ul
+      %li Python 2.5
+      %li Framework-less web application
+  .features
+    %ul
+      %li Catalogues each to-do item by priority
+      %li Supports time-windowed items
+      %li Pop-up notification when you've spent your max time allotted
+  .check
+    .demo= link 'Live on the web', groovetask_home
+    .source= link 'Source Code', '//github.com/jackdesert/groovetask'
+
