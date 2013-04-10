@@ -1,4 +1,5 @@
 :ruby
+  johnmcneil = '//johnmcneilstudio.com'
   grapevine_demo = '//grapevine.jackdesert.com'
   day_demo = '//aDayintheLifeof.net'
   lyxblogger_home = '//lyxblogger.nongnu.org'
@@ -7,6 +8,29 @@
   groovetask_home= '//groove.letseatalready.com'
 
 %h1 Portfolio of Jack Desert
+
+.gig
+  .title= link 'John McNeil Studio (2013)', johnmcneil
+  .description Responsive company website with admin dashboard
+  .tech 
+    %ul
+      %li Rails 3.2
+      %li Zurb Foundation
+      %li Well-formed JavaScript with JSHint
+      %li Rspec
+      %li Postgres
+      %li Paperclip
+      %li Isotope
+  .features
+    %ul
+      %li Try it on any size device--responsive design achieved through Foundation 4
+      %li Shows off stills and videos of all the projects JohnMcNeilStudio has worked on.
+      %li Admin dashboard provides validations on image width, image height, and character count
+      %li Admin dashboard allows reordering of items within the scope of its parent
+  .check
+    .demo= link 'Live on the web', johnmcneil
+
+
 
 .gig
   .title= link 'the Grapevine (2013)', grapevine_demo 

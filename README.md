@@ -1,6 +1,12 @@
 Portfolio
 =========
 
+Directory Structure
+-------------------
+
+/src holds the raw haml and scss
+/site holds the generated html and css
+
 Preview
 -------
 
