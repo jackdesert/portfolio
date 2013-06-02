@@ -6,26 +6,48 @@
   regi_home = '//hbbostonamc.org/regi'
   kooji_home= '//evening-mountain-9380.heroku.com'
   groovetask_home= '//groove.letseatalready.com'
+  breadnbutter = '//github.com/jackdesert/breadnbutter'
 
 %h1 Portfolio of Jack Desert
 
 .gig
-  .title= link 'John McNeil Studio (2013)', johnmcneil
+  .title= link 'BreadnButter', breadnbutter
+  .description The Simplest Way to add Breadcrumbs to Your Site
+  .more While other solutions for breadcrumbs require you to specify explicitly what text to display, what model to link to, etc., BreadnButter assumes RESTful routes and figures out the rest by itself.
+  .tech
+    %ul
+      %li A gem for Rails 3.1+ applications
+      %li Rails Engine to acquire gem's view files
+      %li Rspec tested
+  .features
+    %ul
+      %li Add to your project via Gemfile
+      %li Insert into application.html.erb with one method call
+  .check
+    .source= link 'Source Code', breadnbutter
+
+.gig
+  .title= link 'JohnMcNeilStudio.com Showcase (2013)', johnmcneil
   .description Responsive company website with admin dashboard
   .tech 
     %ul
       %li Rails 3.2
+      %li Http Caching using max-age
+      %li Action Caching with Memcached & Dalli
       %li Zurb Foundation
-      %li Well-formed JavaScript with JSHint
-      %li Rspec
-      %li Postgres
-      %li Paperclip
-      %li Isotope
+      %li Feedzirra
+      %li All JavaScript run through JSHint
+      %li Full Rspec test suite
+      %li Postgres on the backend
+      %li Paperclip for images
+      %li Isotope for stackable layout
+      %li Object-oriented approach for model reuse
   .features
     %ul
       %li Try it on any size device--responsive design achieved through Foundation 4
       %li Shows off stills and videos of all the projects JohnMcNeilStudio has worked on.
-      %li Admin dashboard provides validations on image width, image height, and character count
+      %li Admin dashboard incorporates modular patterns
+      %li Custom validations for image width, image height, and character count
       %li Admin dashboard allows reordering of items within the scope of its parent
   .check
     .demo= link 'Live on the web', johnmcneil
@@ -59,12 +81,13 @@
   .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
   .tech 
     %ul
-      %li Rails 
+      %li Rails 3.2
       %li CoffeeScript
       %li MongoDB 
       %li Rspec 
       %li eLyXer 
       %li Ebooks
+      %li Rackspace
   .features
     %ul
       %li Preview avatar images before submitting profile
