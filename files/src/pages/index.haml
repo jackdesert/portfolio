@@ -11,8 +11,11 @@
   flywheel_android = '//play.google.com/store/apps/details?id=com.upstartmobile.Cabulous'
   flywheel_iphone = '//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8'
   flywheel_dot_com = '//flywheel.com'
+  resume = '//jackdesert.com/resume.pdf'
 
-%h1 Portfolio of Jack Desert
+#header
+  %h1 Portfolio of Jack Desert
+  #resume= link 'r&eacute;sum&eacute;', resume
 
 
 .gig
@@ -28,7 +31,7 @@
       %li Much else that is proprietary
   .features
     %ul
-      %li Servers aimed for 100% uptime (think about the consequences of migrations across several servers...)
+      %li Servers aimed for 100% uptime (think of the implications when migrating across several servers...)
   .check
     .source= link 'Flywheel App for iPhone', flywheel_iphone
     .source= link 'Flywheel App for Android', flywheel_android
