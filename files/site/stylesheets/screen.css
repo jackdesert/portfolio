@@ -1,4 +1,4 @@
-/* line 25 */
+/* line 24 */
 * {
   font-family: Verdana;
   font-size: 16px;
@@ -7,59 +7,68 @@
   line-height: 1.3;
 }
 
-/* line 32 */
+/* line 31 */
 a {
+  display: inline-block;
   color: #5555dd;
   font-style: italic;
   font-weight: bold;
   text-decoration: none;
+  margin-bottom: 0;
+}
+/* line 38 */
+a:hover {
+  font-size: 105%;
+  font-weight: bold;
+  margin-bottom: -1px;
 }
 
-/* line 38 */
+/* line 43 */
 ul {
   margin-left: 34px;
   padding: 2px 0 10px;
   width: 70ex;
 }
 
-/* line 42 */
+/* line 47 */
 li + li {
   padding-top: 2px !important;
 }
 
-/* line 44 */
+/* line 49 */
 body {
   font-family: Verdana;
   font-size: 10pt;
-  background-color: #0e0b50;
+  background-color: #0a083a;
 }
 
-/* line 50 */
+/* line 55 */
 .content {
-  background-color: #0e0b50;
+  background-color: #0a083a;
   width: 800px;
   margin: 0 auto;
 }
 
-/* line 55 */
+/* line 60 */
 #header {
   position: relative;
 }
-/* line 57 */
+/* line 62 */
 #header #resume {
-  padding: 4px 13px;
-  background-color: #ddddff;
+  padding: 4px 13px 7px;
+  background-color: #e5e5ff;
   position: absolute;
   right: 30px;
-  bottom: 0px;
+  bottom: -3px;
+  font-size: 16px;
 }
 
-/* line 66 */
+/* line 72 */
 h1, h2, h3 {
   font-weight: bold;
 }
 
-/* line 69 */
+/* line 75 */
 h1 {
   font-size: 23px;
   text-align: center;
@@ -67,60 +76,60 @@ h1 {
   padding-top: 20px;
 }
 
-/* line 76 */
+/* line 82 */
 .gig {
   padding: 10px;
-  background-color: #ccccff;
+  background-color: #e5e5ff;
   margin: 27px;
 }
-/* line 77 */
+/* line 83 */
 .gig .tech, .gig .features, .gig .description, .gig .check {
   font-size: 16px;
 }
-/* line 79 */
+/* line 85 */
 .gig .more {
   padding: 10px;
 }
-/* line 84 */
+/* line 90 */
 .gig .title {
   font-size: 22px;
   padding-bottom: 10px;
 }
-/* line 87 */
+/* line 93 */
 .gig .tech:before {
   content: "Technologies";
 }
-/* line 89 */
+/* line 95 */
 .gig .features:before {
   content: "Features";
 }
-/* line 91 */
+/* line 97 */
 .gig .features, .gig .tech {
   padding-top: 10px;
 }
-/* line 93 */
+/* line 99 */
 .gig .features:first-line, .gig .tech:first-line, .gig .check:first-line {
   font-weight: bold;
   font-size: 110%;
 }
-/* line 96 */
+/* line 102 */
 .gig .check:before {
   content: "Check it Out";
 }
-/* line 99 */
+/* line 105 */
 .gig .check .note {
   padding-left: 10px;
   font-size: 90%;
 }
-/* line 102 */
+/* line 108 */
 .gig .check .demo {
   padding-top: 5px;
 }
-/* line 104 */
+/* line 110 */
 .gig .check .demo, .gig .check .source {
   padding-left: 10px;
 }
-/* line 106 */
+/* line 112 */
 .gig .check .source ul {
   list-style: none;
   margin-left: 15px;

@@ -1,5 +1,4 @@
 // Background Colors
-$nearly_white_background: #ddf
 $light_background: lighten(#ccf, 5%)
 $medium_background: #aaf
 $dark_background: #99f
@@ -30,10 +29,16 @@ $column_top: 73px
   border-radius: $med_pad
   line-height: 1.3
 a
+  display: inline-block
   color: #55D
   font-style: italic
   font-weight: bold
   text-decoration: none
+  margin-bottom: 0
+  &:hover
+    font-size: 105%
+    font-weight: bold
+    margin-bottom: -1px
 
 ul
   margin-left: 34px
@@ -55,11 +60,12 @@ body
 #header
   position: relative
   #resume
-    padding: 4px 13px
-    background-color: $nearly_white_background
+    padding: 4px 13px 7px
+    background-color: $light_background
     position: absolute
     right: 30px
-    bottom: 0px
+    bottom: -3px
+    font-size: 16px 
 
     
 
