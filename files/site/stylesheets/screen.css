@@ -4,14 +4,14 @@
   font-size: 16px;
   color: #111122;
   border-radius: 10px;
+  line-height: 1.3;
 }
 
-/* line 31 */
+/* line 32 */
 a {
   color: #5555dd;
   font-style: italic;
   font-weight: bold;
-  line-height: 1.3;
   text-decoration: none;
 }
 
@@ -64,46 +64,50 @@ h1 {
 .gig .tech, .gig .features, .gig .description, .gig .check {
   font-size: 16px;
 }
-/* line 71 */
+/* line 68 */
+.gig .more {
+  padding: 10px;
+}
+/* line 73 */
 .gig .title {
   font-size: 22px;
   padding-bottom: 10px;
 }
-/* line 74 */
+/* line 76 */
 .gig .tech:before {
   content: "Technologies";
 }
-/* line 76 */
+/* line 78 */
 .gig .features:before {
   content: "Features";
 }
-/* line 78 */
+/* line 80 */
 .gig .features, .gig .tech {
   padding-top: 10px;
 }
-/* line 80 */
+/* line 82 */
 .gig .features:first-line, .gig .tech:first-line, .gig .check:first-line {
   font-weight: bold;
   font-size: 110%;
 }
-/* line 84 */
+/* line 86 */
 .gig .check:before {
   content: "Check it Out";
 }
-/* line 87 */
+/* line 89 */
 .gig .check .note {
   padding-left: 10px;
   font-size: 90%;
 }
-/* line 90 */
+/* line 92 */
 .gig .check .demo {
   padding-top: 5px;
 }
-/* line 92 */
+/* line 94 */
 .gig .check .demo, .gig .check .source {
   padding-left: 10px;
 }
-/* line 94 */
+/* line 96 */
 .gig .check .source ul {
   list-style: none;
   margin-left: 15px;

@@ -8,8 +8,32 @@
   kooji_home= '//evening-mountain-9380.heroku.com'
   groovetask_home= '//groove.letseatalready.com'
   breadnbutter = '//github.com/jackdesert/breadnbutter'
+  flywheel_android = '//play.google.com/store/apps/details?id=com.upstartmobile.Cabulous'
+  flywheel_iphone = '//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8'
+  flywheel_dot_com = '//flywheel.com'
 
 %h1 Portfolio of Jack Desert
+
+
+.gig
+  .title= link 'Flywheel App (2013)', flywheel_dot_com
+  .description Hail a cab from your smart phone, and watch it drive toward you
+  .more My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.
+  .tech
+    behind the API
+    %ul
+      %li Riak for high-availability storage
+      %li Ruby/Rspec for sanity
+      %li RR for mocks and stubs
+      %li Much else that is proprietary
+  .features
+    %ul
+      %li Servers aimed for 100% uptime (think about the consequences of migrations across several servers...)
+  .check
+    .source= link 'Flywheel App for iPhone', flywheel_iphone
+    .source= link 'Flywheel App for Android', flywheel_android
+    .source= link 'Home Page', flywheel_dot_com
+
 
 .gig
   .title= link 'BreadnButter (2013)', breadnbutter
@@ -29,7 +53,7 @@
 
 .gig
   .title= link 'JohnMcNeilStudio.com Showcase (2013)', johnmcneil
-  .description Responsive company website with admin dashboard
+  .description Rails-backed responsive website with custom admin CMS
   .tech 
     %ul
       %li Rails 3.2
