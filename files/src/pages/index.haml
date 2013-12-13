@@ -1,4 +1,8 @@
 :ruby
+  def link(text, url, hash=nil)
+    super(text, url, target: '_blank')
+  end
+
   johnmcneil = '//johnmcneilstudio.com'
   juniper = '//static.johnmcneilstudio.com/simply_connected'
   grapevine_demo = '//grapevine.jackdesert.com'
@@ -12,6 +16,8 @@
   flywheel_iphone = '//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8'
   flywheel_dot_com = '//flywheel.com'
   resume = '//jackdesert.com/resume.pdf'
+  jacklisted_home = '//sfbay.jacklisted.com'
+  jacklisted_source = '//github.com/jackdesert/jacklisted'
 
 #header
   %h1 Portfolio of Jack Desert
@@ -36,6 +42,26 @@
     .source= link 'Flywheel App for iPhone', flywheel_iphone
     .source= link 'Flywheel App for Android', flywheel_android
     .source= link 'Home Page', flywheel_dot_com
+
+.gig
+  .title= link 'JackListed (2013)', jacklisted_home
+  .description A canonical, publicly-editable list of employers in the Internet industry
+  .more There's something intriguing about creating something that can be edited by anyone, without requiring a login. The barrier to entry is only millimeters high, yet you must find creative ways to prevent spam and fraud.
+  .tech
+    %ul
+      %li Rails 3.2
+      %li Foundation 5
+      %li Rspec/RR/Shoulda/FactoryGirl
+  .features
+    %ul
+      %li Anyone can add listings
+      %li Basic, reponsive design
+      %li Each city gets its own subdomain
+      %li Spam prevention through validates_uniqueness_of :domain_name
+      %li Clean interaction design requires fewer mouseclicks
+  .check
+    .source= link 'Live on the Web', jacklisted_home, target: '_blank'
+    .source= link 'Source Code', jacklisted_source
 
 
 .gig
@@ -170,68 +196,4 @@
   .check
     .demo= link 'Home page', lyxblogger_home 
     .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo'
-
-.gig
-  .title= link 'REGI (Co-Developer, 2011-2012)', regi_home
-  .description A trip registration system for high risk outdoor adventures. In use by the Hiking and Biking committee of the Boston chapter of the Appalachian Mountain Club.
-  .tech 
-    %ul
-      %li PHP
-      %li Apache Rewrite
-      %li MySQL
-      %li Interaction Design
-      %li CSS3
-  .features
-    %ul
-      %li Users can keep a private profile, viewable only by trip leaders
-      %li Emails leaders when someone signs up for a trip
-      %li Emails participants when they are approved
-      %li Offers a carpooling page only viewable once you're approved
-  .check
-    .demo= link 'Live on the web', regi_home
-    .source= link 'Source Code', '//github.com/jackdesert/REGI'
-
-.gig
-  .title= link 'KOOJI (2012)', kooji_home
-  .description An enhanced trip registration system, intended to replace REGI
-  .tech 
-    %ul
-      %li Rails
-      %li PostgreSQL
-      %li AJAX
-  .features
-    %ul
-      %li More responsive (with fewer page loads) using AJAX for things like approving users
-      %li News feed showing what your most recent activity is (like who you approved for a trip, what you signed up for, when you last updated your profile, etc.)
-      %li Photos of each user, displayable on the carpooling page, so you can get to know people better that you hiked with
-      %li A leader blurb, or philosophy, displayed on each event that leader is associated with. By seeing the leader's name, photo, and philosophy blurb before you even sign up, you have a better sense of whether his/her leadership style will mesh with what you're looking to get out of the adventure
-      %li An enhanced ADMIN page, where you can see all leaders in the system, and easily upgrade them to be admins if you like
-      %li Carpooling page with entries grouped by whether they are offering or soliciting a ride
-      %li Enhanced menus
-      %li Clear delineation of who is the registrar for the event. This allows a user to respond to a system email, and it will go to the registrar for the event. Likewise, if a leader or registrar responds to the email that says "so and so signed up", that email goes to the user who signed up.
-      %li Code is much easier to maintain, since it's written in Rails
-
-  .check
-    .demo
-      = link 'Live demo', kooji_home
-      .note (Heroku app may be sleeping--click again after a minute)
-    .source
-      = link 'Source Code', '//github.com/jackdesert/kooji'
-      .note The Readme will tell you how to log in
-
-.gig
-  .title= link 'GrooveTask (2008)', groovetask_home
-  .description A sophisticated to-do list that is aware of both task priority and the type of energy required to succeed. Based on Brian Tracy's book, "Eat That Frog".
-  .tech 
-    %ul
-      %li Python 2.5
-      %li Framework-less web application
-  .features
-    %ul
-      %li Catalogues each to-do item by priority
-      %li Supports time-windowed items
-      %li Pop-up notification when you've spent your max time allotted
-  .check
-    .demo= link 'Live on the web', groovetask_home
-    .source= link 'Source Code', '//github.com/jackdesert/groovetask'
 
