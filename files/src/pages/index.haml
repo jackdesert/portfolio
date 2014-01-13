@@ -16,16 +16,15 @@
   flywheel_iphone = '//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8'
   flywheel_dot_com = '//flywheel.com'
   resume = '//jackdesert.com/resume.pdf'
-  jacklisted_home = '//jacklisted.com'
+  jacklisted_home = '//portland.jacklisted.com'
   jacklisted_source = '//github.com/jackdesert/jacklisted'
 
 #header
   %h1 Portfolio of Jack Desert
   #resume= link 'r&eacute;sum&eacute;', resume
 
-
 .gig
-  .title= link 'Flywheel App (2013)', flywheel_dot_com
+  .title= link 'Flywheel App (2013)', flywheel_iphone
   .description Hail a cab from your smart phone, and watch it drive toward you
   .more My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.
   .tech
@@ -44,14 +43,16 @@
     .source= link 'Home Page', flywheel_dot_com
 
 .gig
-  .title= link 'JackListed (2013)', jacklisted_home
+  .title= link 'JackListed (work-in-progress, started Dec 2013)', jacklisted_home
   .description A canonical, publicly-editable list of employers in the Internet industry
   .more There's something intriguing about creating something that can be edited by anyone, without requiring a login. The barrier to entry is only millimeters high, yet you must find creative ways to prevent spam and fraud.
   .tech
     %ul
-      %li Rails 3.2
+      %li Rails 3.2 / Postgres / Nginx on Rackspace
+      %li Nginx
       %li Foundation 5
       %li Rspec/RR/Shoulda/FactoryGirl
+      %li Capistrano 3
   .features
     %ul
       %li Anyone can add listings
@@ -85,7 +86,7 @@
   .description Rails-backed responsive website with custom admin CMS
   .tech 
     %ul
-      %li Rails 3.2
+      %li Rails 3.2 / Postgres on Heroku
       %li Http Caching using max-age
       %li Action Caching with Memcached & Dalli
       %li Zurb Foundation
@@ -136,7 +137,7 @@
   .tech 
     %ul
       %li Backbone.js
-      %li Rails 3.2
+      %li Rails 3.2 / Nginx / Postgres on Rackspace
       %li CoffeeScript
       %li Rspec
       %li Sqlite3
@@ -157,9 +158,8 @@
   .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
   .tech 
     %ul
-      %li Rails 3.2
+      %li Rails 3.2 / Nginx / MongoDB on Rackspace
       %li CoffeeScript
-      %li MongoDB 
       %li Rspec 
       %li eLyXer 
       %li Ebooks
