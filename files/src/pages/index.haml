@@ -20,47 +20,59 @@
   jacklisted_source = '//github.com/jackdesert/jacklisted'
 
 #header
-  %h1 Portfolio of Jack Desert
+  %h1 Jack Desert
   #resume= link 'r&eacute;sum&eacute;', resume
 
 #purpose
-  I am committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
+  Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
 
 .gig
-  .title= link 'Flywheel App (2013)', flywheel_iphone
-  .description Hail a cab from your smart phone, and watch it drive toward you
-  .more My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.
+  .title= link 'Flywheel App API', flywheel_iphone
+  /.more Hail a cab from your smart phone, and watch it drive toward you
+  .description My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.
   .tech
-    behind the API
     %ul
-      %li Riak for high-availability storage
-      %li Ruby/Rspec for sanity
+      %li Ruby for message processing
+      %li Rails / Postgres for admin dashboard
+      %li Rspec for test-driven development
       %li RR for mocks and stubs
-      %li Much else that is proprietary
+      %li PostGIS for Geolocation
+      %li Squeel for complex SQL joins
+      %li Riak for high-availability storage
+      %li RabbitMQ for message passing
+      %li Proprietary data structure for message content
+      %li Stripe for credit card processing
+      %li Logstash for post-mortem debugging
+      %li Node.js for public API
+      %li Git for pull requests
+      %li Pry for REPL-driven development
   .features
     %ul
       %li Servers aimed for 100% uptime (think of the implications when migrating across several servers...)
+      %li API provided list of available rides based on geolocation
+      %li Zipcode-based fare structure using geolocation
+      %li Per-mileage and per-minute fare calculation
   .check
     .source= link 'Flywheel App for iPhone', flywheel_iphone
     .source= link 'Flywheel App for Android', flywheel_android
     .source= link 'Home Page', flywheel_dot_com
 
 .gig
-  .title= link 'JackListed (work-in-progress, started Dec 2013)', jacklisted_home
-  .description A canonical, publicly-editable list of employers in the Internet industry
-  .more There's something intriguing about creating something that can be edited by anyone, without requiring a login. The barrier to entry is only millimeters high, yet you must find creative ways to prevent spam and fraud.
+  .title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home
+  .description This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter.
   .tech
     %ul
       %li Rails 3.2 / Postgres / Nginx on Rackspace
-      %li Nginx
-      %li Foundation 5
-      %li Rspec/RR/Shoulda/FactoryGirl
-      %li Capistrano 3
+      %li Foundation 5 for responsive CSS
+      %li Haml / Sass for clean views
+      %li Rspec/RR/Shoulda/FactoryGirl for testing
+      %li Capistrano 3 for deployment
   .features
     %ul
-      %li Anyone can add listings
+      %li No login required for contributing
       %li Reponsive, clean, interaction design requires few mouseclicks
-      %li City subdomains
+      %li Each city has its own subdomain
+      %li Root path takes you to whatever city you browsed last
       %li Requires new URIs to have an http status of 200 (reduces spam and typos)
       %li Requires new URIs to have a unique domain name (reduces spam and clutter)
       %li Requires new URIs to contain certain keywords or else awaits moderator approval (reduces spam)
@@ -69,135 +81,141 @@
     .source= link 'Source Code', jacklisted_source
 
 
-.gig
-  .title= link 'BreadnButter (2013)', breadnbutter
-  .description The Simplest Way to add Breadcrumbs to Your Site
-  .more While other solutions for breadcrumbs require you to specify explicitly what text to display, what model to link to, etc., BreadnButter assumes RESTful routes and figures out the rest by itself.
-  .tech
-    %ul
-      %li A gem for Rails 3.1+ applications
-      %li Rails Engine to acquire gem's view files
-      %li Rspec tested
-  .features
-    %ul
-      %li Add to your project via Gemfile
-      %li Insert into application.html.erb with one method call
-  .check
-    .source= link 'Source Code', breadnbutter
+/.gig
+/  .title= link 'BreadnButter (2013)', breadnbutter
+/  .description The Simplest Way to add Breadcrumbs to Your Site
+/  .more While other solutions for breadcrumbs require you to specify explicitly what text to display, what model to link to, etc., BreadnButter assumes RESTful routes and figures out the rest by itself.
+/  .tech
+/    %ul
+/      %li A gem for Rails 3.1+ applications
+/      %li Rails Engine to acquire gem's view files
+/      %li Rspec tested
+/  .features
+/    %ul
+/      %li Add to your project via Gemfile
+/      %li Insert into application.html.erb with one method call
+/  .check
+/    .source= link 'Source Code', breadnbutter
 
 .gig
-  .title= link 'JohnMcNeilStudio.com Showcase (2013)', johnmcneil
-  .description Rails-backed responsive website with custom admin CMS
+  .title= link 'JohnMcNeilStudio.com', johnmcneil
+  .description Comprehensive showcase of all the artistic endeavors at John McNeil Studio
   .tech 
     %ul
       %li Rails 3.2 / Postgres on Heroku
-      %li Http Caching using max-age
-      %li Action Caching with Memcached & Dalli
-      %li Zurb Foundation
-      %li Feedzirra
-      %li All JavaScript run through JSHint
       %li Full Rspec test suite
-      %li Postgres on the backend
-      %li Paperclip for images
-      %li Isotope for stackable layout
       %li Object-oriented approach for model reuse
-  .features
+      %li Http Caching with max-age on select pages
+      %li Action Caching with Memcached & Dalli
+      %li Feedzirra for fetching Tweets
+      %li Zurb Foundation for responsive CSS
+      %li JavaScript / jQuery for front-end effects
+      %li JSHint for clean JavaScript
+      %li S3 and Paperclip for image hosting
+      %li Isotope for stackable layout
+  .features 
     %ul
-      %li Try it on any size device--responsive design achieved through Foundation 4
-      %li Shows off stills and videos of all the projects JohnMcNeilStudio has worked on.
-      %li Admin dashboard incorporates modular patterns
-      %li Custom validations for image width, image height, and character count
-      %li Admin dashboard allows reordering of items within the scope of its parent
+      %li Shows off stills and videos of all the projects at JohnMcNeilStudio
+      %li Displays live video feed on home page
+      %li Displays the song we're listening to on the home page
+      %li Accesses the Twitter API to display our latest tweets
+      %li Responsive layout for any size device
+      %li New projects and artwork are uploaded through custom admin dashboard, with robust validations for image and text dimensions
+      %li Admins can rearrange and hide content at will
+      %li Periodically imports a WordPress blog for partial display on our own site
   .check
     .demo= link 'Live on the web', johnmcneil
 
 
 .gig
-  .title= link 'Juniper Networks ROI Calculator (2013)', juniper
-  .description Return on Investment Calculator in Backbone
+  .title= link 'Juniper Calculator', juniper
+  .description Demonstrates how much money your company can save by using Juniper.
   .tech 
     %ul
-      %li Backbone
-      %li Underscore
-      %li jsHint
-      %li Qunit
-      %li Sass 
-      %li Require.js
+      %li Backbone.js for client-side MVC
+      %li Underscore.js for additional JavaScript functionality 
+      %li Require.js for organizing dependencies
+      %li jQuery for interactive animation
+      %li jsHint to keep our code clean
+      %li Qunit for testing
+      %li Grunt build system
   .features
     %ul
-      %li Single page application (SPA)
-      %li Allows assumptions to be updated live 
-      %li Relevant assumptions display on each virtual page
       %li Animated slot-machine style display
-      %li Site allows navigation end-to-end 
+      %li Nearly instantaneous response when you click something
+      %li Incorporates real numbers from your company
+      %li Clearly shows the assumptions made for each calculation 
+      %li Provides customized PDF for download
   .check
     .demo= link 'Live on the web', juniper 
 
 
 
-.gig
-  .title= link 'the Grapevine (2013)', grapevine_demo 
-  .description A simple message board using Backbone.js
-  .tech 
-    %ul
-      %li Backbone.js
-      %li Rails 3.2 / Nginx / Postgres on Rackspace
-      %li CoffeeScript
-      %li Rspec
-      %li Sqlite3
-  .features
-    %ul
-      %li Single Page Application (SPA)
-      %li Back-end durability achieved via AJAX calls to Rails controller and sqlite3
-      %li No sign-in required
-      %li Allows creating and editing messages without ever leaving the page
-      %li Remembers which items you've alredy viewed, even if you page refresh
-  .check
-    .demo= link 'Live Demo', grapevine_demo
-    .source= link 'Source Code', '//github.com/jackdesert/grapevine'
-
-
-.gig
-  .title= link 'A Day in the Life (2012)', day_demo
-  .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
-  .tech 
-    %ul
-      %li Rails 3.2 / Nginx / MongoDB on Rackspace
-      %li CoffeeScript
-      %li Rspec 
-      %li eLyXer 
-      %li Ebooks
-      %li Rackspace
-  .features
-    %ul
-      %li Preview avatar images before submitting profile
-      %li Automatically saves as you type via AJAX
-      %li Manage published/private via AJAX
-      %li Client Side Validations for account creation
-      %li Keeps track of which entries you've read so it can feed you another one in random order (Keeps track even if you're not logged in)
-      %li Export to Ebook (.mobi) format
-  .check
-    .demo 
-      = link 'Live Demo', day_demo
-    .source
-      %b Private Source Code:
-      %ul
-        %li git clone https//git.jackdesert.com/adayinthelifeof.git
-        %li user: okcupid
-        %li password: h9m7xa11e
-
-.gig
-  .title= link 'LyXBLogger (2009-2013)', lyxblogger_home
-  .description A Python plugin for effortlessly publishing from LyX to a Wordpress blog
-  .tech 
-    %ul
-      %li Python 2.7
-      %li Console App
-      %li WordPress
-      %li XMLRPC
-      %li Unit Tests
-      %li OO design
-  .check
-    .demo= link 'Home page', lyxblogger_home 
-    .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo'
-
+/.gig
+/  .title= link 'the Grapevine (2013)', grapevine_demo 
+/  .description A simple message board using Backbone.js
+/  .tech 
+/    %ul
+/      %li Backbone.js
+/      %li Rails 3.2 / Nginx / Postgres on Rackspace
+/      %li CoffeeScript
+/      %li Rspec
+/      %li Sqlite3
+/  .features
+/    %ul
+/      %li Single Page Application (SPA)
+/      %li Back-end durability achieved via AJAX calls to Rails controller and sqlite3
+/      %li No sign-in required
+/      %li Allows creating and editing messages without ever leaving the page
+/      %li Remembers which items you've alredy viewed, even if you page refresh
+/  .check
+/    .demo= link 'Live Demo', grapevine_demo
+/    .source= link 'Source Code', '//github.com/jackdesert/grapevine'
+/
+/
+/.gig
+/  .title= link 'A Day in the Life (2012)', day_demo
+/  .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
+/  .tech 
+/    %ul
+/      %li Rails 3.2 / Nginx / MongoDB on Rackspace
+/      %li CoffeeScript
+/      %li Rspec 
+/      %li eLyXer 
+/      %li Ebooks
+/      %li Rackspace
+/  .features
+/    %ul
+/      %li Preview avatar images before submitting profile
+/      %li Automatically saves as you type via AJAX
+/      %li Manage published/private via AJAX
+/      %li Client Side Validations for account creation
+/      %li Keeps track of which entries you've read so it can feed you another one in random order (Keeps track even if you're not logged in)
+/      %li Export to Ebook (.mobi) format
+/  .check
+/    .demo 
+/      = link 'Live Demo', day_demo
+/    .source
+/      %b Private Source Code:
+/      %ul
+/        %li git clone https//git.jackdesert.com/adayinthelifeof.git
+/        %li user: okcupid
+/        %li password: h9m7xa11e
+/
+/.gig
+/  .title= link 'LyXBLogger (2009-2013)', lyxblogger_home
+/  .description A Python plugin for effortlessly publishing from LyX to a Wordpress blog
+/  .tech 
+/    %ul
+/      %li Python 2.7
+/      %li Console App
+/      %li WordPress
+/      %li XMLRPC
+/      %li Unit Tests
+/      %li OO design
+/  .check
+/    .demo= link 'Home page', lyxblogger_home 
+/    .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo'
+/
+#footer
+  Copyright 2012-2014 Jack Desert
