@@ -23,6 +23,9 @@
   %h1 Portfolio of Jack Desert
   #resume= link 'r&eacute;sum&eacute;', resume
 
+#purpose
+  I am committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
+
 .gig
   .title= link 'Flywheel App (2013)', flywheel_iphone
   .description Hail a cab from your smart phone, and watch it drive toward you
@@ -56,10 +59,11 @@
   .features
     %ul
       %li Anyone can add listings
-      %li Basic, reponsive design
-      %li Each city gets its own subdomain
-      %li Spam prevention through validates_uniqueness_of :domain_name
-      %li Clean interaction design requires fewer mouseclicks
+      %li Reponsive, clean, interaction design requires few mouseclicks
+      %li City subdomains
+      %li Requires new URIs to have an http status of 200 (reduces spam and typos)
+      %li Requires new URIs to have a unique domain name (reduces spam and clutter)
+      %li Requires new URIs to contain certain keywords or else awaits moderator approval (reduces spam)
   .check
     .source= link 'Live on the Web', jacklisted_home, target: '_blank'
     .source= link 'Source Code', jacklisted_source
