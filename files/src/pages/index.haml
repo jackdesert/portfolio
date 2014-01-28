@@ -18,6 +18,8 @@
   resume = '//jackdesert.com/resume.pdf'
   jacklisted_home = '//portland.jacklisted.com'
   jacklisted_source = '//github.com/jackdesert/jacklisted'
+  hengage = '//hengage.com'
+  daily_lager_source = '//github.com/jackdesert/daily_lager'
 
 #header
   %h1 Jack Desert
@@ -57,28 +59,53 @@
     .source= link 'Flywheel App for Android', flywheel_android
     .source= link 'Home Page', flywheel_dot_com
 
+
 .gig
-  .title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home
-  .description This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter.
+  .title= link 'Daily Lager (work-in-progress, started Jan 2014)', daily_lager_source
+  .description Allows tracking of your own custom, statistical data about yourself via SMS or command line.
   .tech
     %ul
-      %li Rails 3.2 / Postgres / Nginx on Rackspace
-      %li Foundation 5 for responsive CSS
-      %li Haml / Sass for clean views
-      %li Rspec/RR/Shoulda/FactoryGirl for testing
-      %li Capistrano 3 for deployment
+      %li Sinatra w/ Sequel gem
+      %li Rspec/RR/Shoulda for testing
+      %li Curses for interactive demo
   .features
     %ul
-      %li No login required for contributing
-      %li Reponsive, clean, interaction design requires few mouseclicks
-      %li Each city has its own subdomain
-      %li Root path takes you to whatever city you browsed last
-      %li Requires new URIs to have an http status of 200 (reduces spam and typos)
-      %li Requires new URIs to have a unique domain name (reduces spam and clutter)
-      %li Requires new URIs to contain certain keywords or else awaits moderator approval (reduces spam)
+      %li Flyweight stack
+      %li Low-overhead Rspec suite runs in less than 2 seconds
+      %li Custom domain-specific language, tailored for single-fire entry
+      %li Commands can be input via SMS or command line
+      %li Interactive demo included with source code (no setup required)
+      %li Supported verbs: CREATE, RECORD, ACT, RENAME, TODAY, YESTERDAY
+      %li Supports daily default values on per-category basis
+      %li Displays today's or yesterday's aggregates
   .check
-    .source= link 'Live on the Web', jacklisted_home, target: '_blank'
-    .source= link 'Source Code', jacklisted_source
+    .source= link 'Source Code', daily_lager_source
+
+
+
+/.gig
+/  .title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home
+/  .description This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter.
+/  .tech
+/    %ul
+/      %li Rails 3.2 / Postgres / Nginx on Rackspace
+/      %li Foundation 5 for responsive CSS
+/      %li Haml / Sass for clean views
+/      %li Rspec/RR/Shoulda/FactoryGirl for testing
+/      %li Capistrano 3 for deployment
+/  .features
+/    %ul
+/      %li No login required for contributing
+/      %li Reponsive, clean, interaction design requires few mouseclicks
+/      %li Each city has its own subdomain
+/      %li Root path takes you to whatever city you browsed last
+/      %li Requires new URIs to have an http status of 200 (reduces spam and typos)
+/      %li Requires new URIs to have a unique domain name (reduces spam and clutter)
+/      %li Requires new URIs to contain certain keywords or else awaits moderator approval (reduces spam)
+/  .check
+/    .source= link 'Live on the Web', jacklisted_home, target: '_blank'
+/    .source= link 'Source Code', jacklisted_source
+
 
 
 /.gig
@@ -150,7 +177,35 @@
     .demo= link 'Live on the web', juniper 
 
 
+.gig
+  .title= link 'H Engage', hengage
+  .description A platform for managers to communicate gamified content to employees. My big contributions were the addition of an interactive site tutorial and the creation and robustification of their game tiles.
+  .tech 
+    %ul
+      %li Rails 3.0 -> 3.1 (made the leap!)
+      %li Rspec
+      %li Postgres for user interaction 
+      %li MongoDB for inserting and later querying arbitrary fields
+      %li JavaScript
+      %li Haml / Sass
+      %li SendGrid / CloudMailin / Twilio for text and email interaction
+      %li Asset Sync to keep Heroku lightly loaded
+  .features
+    %ul
+      %li Fancy Ajaxy site tutorial
+      %li Supports joining via SMS or email
+      %li Allows user to select tiles to interact with
+      %li Interacts with user via SMS, Email, or Web
+      %li Displays scoreboard with a user's friends on it
+      %li Generates reports of user activity
+      %li Encourages users to keep playing
+  .check
+    .demo= link 'Live on the web', hengage
 
+
+
+
+  
 /.gig
 /  .title= link 'the Grapevine (2013)', grapevine_demo 
 /  .description A simple message board using Backbone.js

@@ -50,33 +50,53 @@
   </div>
 </div>
 <div class='gig'>
-  <div class='title'><a href="//portland.jacklisted.com" target="_blank">JackListed.com (work-in-progress, started Dec 2013)</a></div>
-  <div class='description'>This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter.</div>
+  <div class='title'><a href="//github.com/jackdesert/daily_lager" target="_blank">Daily Lager (work-in-progress, started Jan 2014)</a></div>
+  <div class='description'>Allows tracking of your own custom, statistical data about yourself via SMS or command line.</div>
   <div class='tech'>
     <ul>
-      <li>Rails 3.2 / Postgres / Nginx on Rackspace</li>
-      <li>Foundation 5 for responsive CSS</li>
-      <li>Haml / Sass for clean views</li>
-      <li>Rspec/RR/Shoulda/FactoryGirl for testing</li>
-      <li>Capistrano 3 for deployment</li>
+      <li>Sinatra w/ Sequel gem</li>
+      <li>Rspec/RR/Shoulda for testing</li>
+      <li>Curses for interactive demo</li>
     </ul>
   </div>
   <div class='features'>
     <ul>
-      <li>No login required for contributing</li>
-      <li>Reponsive, clean, interaction design requires few mouseclicks</li>
-      <li>Each city has its own subdomain</li>
-      <li>Root path takes you to whatever city you browsed last</li>
-      <li>Requires new URIs to have an http status of 200 (reduces spam and typos)</li>
-      <li>Requires new URIs to have a unique domain name (reduces spam and clutter)</li>
-      <li>Requires new URIs to contain certain keywords or else awaits moderator approval (reduces spam)</li>
+      <li>Flyweight stack</li>
+      <li>Low-overhead Rspec suite runs in less than 2 seconds</li>
+      <li>Custom domain-specific language, tailored for single-fire entry</li>
+      <li>Commands can be input via SMS or command line</li>
+      <li>Interactive demo included with source code (no setup required)</li>
+      <li>Supported verbs: CREATE, RECORD, ACT, RENAME, TODAY, YESTERDAY</li>
+      <li>Supports daily default values on per-category basis</li>
+      <li>Displays today's or yesterday's aggregates</li>
     </ul>
   </div>
   <div class='check'>
-    <div class='source'><a href="//portland.jacklisted.com" target="_blank">Live on the Web</a></div>
-    <div class='source'><a href="//github.com/jackdesert/jacklisted" target="_blank">Source Code</a></div>
+    <div class='source'><a href="//github.com/jackdesert/daily_lager" target="_blank">Source Code</a></div>
   </div>
 </div>
+<!-- .gig -->
+<!-- .title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home -->
+<!-- .description This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter. -->
+<!-- .tech -->
+<!-- %ul -->
+<!-- %li Rails 3.2 / Postgres / Nginx on Rackspace -->
+<!-- %li Foundation 5 for responsive CSS -->
+<!-- %li Haml / Sass for clean views -->
+<!-- %li Rspec/RR/Shoulda/FactoryGirl for testing -->
+<!-- %li Capistrano 3 for deployment -->
+<!-- .features -->
+<!-- %ul -->
+<!-- %li No login required for contributing -->
+<!-- %li Reponsive, clean, interaction design requires few mouseclicks -->
+<!-- %li Each city has its own subdomain -->
+<!-- %li Root path takes you to whatever city you browsed last -->
+<!-- %li Requires new URIs to have an http status of 200 (reduces spam and typos) -->
+<!-- %li Requires new URIs to have a unique domain name (reduces spam and clutter) -->
+<!-- %li Requires new URIs to contain certain keywords or else awaits moderator approval (reduces spam) -->
+<!-- .check -->
+<!-- .source= link 'Live on the Web', jacklisted_home, target: '_blank' -->
+<!-- .source= link 'Source Code', jacklisted_source -->
 <!-- .gig -->
 <!-- .title= link 'BreadnButter (2013)', breadnbutter -->
 <!-- .description The Simplest Way to add Breadcrumbs to Your Site -->
@@ -151,6 +171,36 @@
   </div>
   <div class='check'>
     <div class='demo'><a href="//static.johnmcneilstudio.com/simply_connected" target="_blank">Live on the web</a></div>
+  </div>
+</div>
+<div class='gig'>
+  <div class='title'><a href="//hengage.com" target="_blank">H Engage</a></div>
+  <div class='description'>A platform for managers to communicate gamified content to employees. My big contributions were the addition of an interactive site tutorial and the creation and robustification of their game tiles.</div>
+  <div class='tech'>
+    <ul>
+      <li>Rails 3.0 -> 3.1 (made the leap!)</li>
+      <li>Rspec</li>
+      <li>Postgres for user interaction</li>
+      <li>MongoDB for inserting and later querying arbitrary fields</li>
+      <li>JavaScript</li>
+      <li>Haml / Sass</li>
+      <li>SendGrid / CloudMailin / Twilio for text and email interaction</li>
+      <li>Asset Sync to keep Heroku lightly loaded</li>
+    </ul>
+  </div>
+  <div class='features'>
+    <ul>
+      <li>Fancy Ajaxy site tutorial</li>
+      <li>Supports joining via SMS or email</li>
+      <li>Allows user to select tiles to interact with</li>
+      <li>Interacts with user via SMS, Email, or Web</li>
+      <li>Displays scoreboard with a user's friends on it</li>
+      <li>Generates reports of user activity</li>
+      <li>Encourages users to keep playing</li>
+    </ul>
+  </div>
+  <div class='check'>
+    <div class='demo'><a href="//hengage.com" target="_blank">Live on the web</a></div>
   </div>
 </div>
 <!-- .gig -->
