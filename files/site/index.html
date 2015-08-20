@@ -8,13 +8,98 @@
     <div class='content'>
       <div id='header'>
   <h1>Jack Desert</h1>
-  <div id='resume'><a href="//jackdesert.com/resume.pdf" target="_blank">r&eacute;sum&eacute;</a></div>
+  <div id='resume'><a href="//jackdesert.com/jackdesert.pdf" target="_blank">r&eacute;sum&eacute;</a></div>
 </div>
 <div id='purpose'>
-  Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
+  <!-- Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work. -->
+  Committed to a clear, easy to use Web. A Web that:
+  <div class='tech'>
+    <ul>
+      <li>is a joy to use</li>
+      <li>responds quickly</li>
+      <li>gives clear error messages</li>
+      <li>doesn't require a manual</li>
+    </ul>
+  </div>
+  Here are some of the professional and side projects I've worked on.
+  <!-- While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate. -->
 </div>
 <div class='gig'>
-  <div class='title'><a href="//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8" target="_blank">Flywheel App API</a></div>
+  <div class='title'>Cloudability Troll (2015)</div>
+  <div class='description'>Deep dives for data anomalies between Riak and MySQL</div>
+  <div class='tech'>
+    <ul>
+      <li>Ruby / Pry-ByeBug</li>
+      <li>Threads for heavy-handed concurrency</li>
+      <li>Sqlite / Sequel (gem) for temp data storage</li>
+      <li>Riak secondary indices to locate blocks of raw data</li>
+      <li>MySQL to locate fact tables (compiled data)</li>
+    </ul>
+  </div>
+  <div class='features'>
+    <ul>
+      <li>For a given value of a secondary index, finds all matching data in Riak</li>
+      <li>Bulk loads preliminary data into sqlite</li>
+      <li>Concurrently fetches corresponding data from MySQL</li>
+      <li>Records whether data matches between both sources</li>
+      <li>Ability to query temp data storage to find patterns</li>
+    </ul>
+  </div>
+</div>
+<div class='gig'>
+  <div class='title'><a href="//pdxdailydancer.com" target="_blank">Daily Dancer (2015)</a></div>
+  <div class='description'>Creates a magic calendar from any list-serve using natural language parsing</div>
+  <div class='tech'>
+    <ul>
+      <li>Ruby/Sinatra</li>
+      <li>Sequel (gem) / sqlite3 for storage</li>
+      <li>Nokogiri for scraping external sources</li>
+      <li>Chronic for parsing dates</li>
+      <li>Redis for system stats</li>
+      <li>Pry-ByeBug for debugging</li>
+      <li>Rspec/RR for testing</li>
+    </ul>
+  </div>
+  <div class='features'>
+    <ul>
+      <li>Extracts messages from a list-serve</li>
+      <li>Groups any message that is an event by the date of the event</li>
+      <li>No login required</li>
+    </ul>
+  </div>
+  <div class='check'>
+    <div class='demo'><a href="//pdxdailydancer.com" target="_blank">Live on the web</a></div>
+    <div class='source'><a href="//github.com/jackdesert/dailydancer" target="_blank">Source Code</a></div>
+  </div>
+</div>
+<div class='gig'>
+  <div class='title'><a href="//freecinc.com" target="_blank">Freecinc (2014)</a></div>
+  <div class='description'>A free hosted solution for syncing TaskWarrior clients.</div>
+  <div class='tech'>
+    <ul>
+      <li>Ruby/Sinatra web app</li>
+      <li>Bash to call taskserver</li>
+      <li>GoLang to test connectivity</li>
+      <li>Pry-ByeBug for debugging</li>
+      <li>Rspec/RR for testing</li>
+    </ul>
+  </div>
+  <div class='features'>
+    <ul>
+      <li>The first hosted solution offering TaskServer to the world</li>
+      <li>Flyweight stack</li>
+      <li>Intuitive UI for easy set up of TaskWarrior clients</li>
+      <li>File export for Mirakel clients</li>
+      <li>No login required</li>
+    </ul>
+  </div>
+  <div class='check'>
+    <div class='demo'><a href="//freecinc.com" target="_blank">Live on the web</a></div>
+    <div class='source'><a href="//github.com/jackdesert/freecinc" target="_blank">Source Code</a></div>
+  </div>
+</div>
+<div class='gig'>
+  <div class='title'><a href="//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8" target="_blank">Flywheel App API (2013)</a></div>
   <!-- .more Hail a cab from your smart phone, and watch it drive toward you -->
   <div class='description'>My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.</div>
   <div class='tech'>
@@ -46,11 +131,11 @@
   <div class='check'>
     <div class='source'><a href="//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8" target="_blank">Flywheel App for iPhone</a></div>
     <div class='source'><a href="//play.google.com/store/apps/details?id=com.upstartmobile.Cabulous" target="_blank">Flywheel App for Android</a></div>
-    <div class='source'><a href="//flywheel.com" target="_blank">Home Page</a></div>
+    <div class='source'><a href="//flywheel.com" target="_blank">Flywheel Home Page</a></div>
   </div>
 </div>
 <div class='gig'>
-  <div class='title'><a href="//github.com/jackdesert/daily_lager" target="_blank">Daily Lager (work-in-progress, started Jan 2014)</a></div>
+  <div class='title'><a href="//github.com/jackdesert/daily_lager" target="_blank">Daily Lager (2013)</a></div>
   <div class='description'>Allows tracking of your own custom, statistical data about yourself via SMS or command line.</div>
   <div class='tech'>
     <ul>
@@ -113,7 +198,7 @@
 <!-- .check -->
 <!-- .source= link 'Source Code', breadnbutter -->
 <div class='gig'>
-  <div class='title'><a href="//johnmcneilstudio.com" target="_blank">JohnMcNeilStudio.com</a></div>
+  <div class='title'><a href="//johnmcneilstudio.com" target="_blank">JohnMcNeilStudio.com (2012)</a></div>
   <div class='description'>Comprehensive showcase of all the artistic endeavors at John McNeil Studio</div>
   <div class='tech'>
     <ul>
@@ -146,35 +231,30 @@
     <div class='demo'><a href="//johnmcneilstudio.com" target="_blank">Live on the web</a></div>
   </div>
 </div>
+<!-- .gig -->
+<!-- .title= link 'Juniper Calculator (2012)', juniper -->
+<!-- .description Demonstrates how much money your company can save by using Juniper. -->
+<!-- .tech -->
+<!-- %ul -->
+<!-- %li Backbone.js for client-side MVC -->
+<!-- %li Underscore.js for additional JavaScript functionality -->
+<!-- %li Require.js for organizing dependencies -->
+<!-- %li jQuery for interactive animation -->
+<!-- %li jsHint to keep our code clean -->
+<!-- %li Qunit for testing -->
+<!-- %li Grunt build system -->
+<!-- .features -->
+<!-- %ul -->
+<!-- %li Animated slot-machine style display -->
+<!-- %li Nearly instantaneous response when you click something -->
+<!-- %li Incorporates real numbers from your company -->
+<!-- %li Clearly shows the assumptions made for each calculation -->
+<!-- %li Provides customized PDF for download -->
+<!-- .check -->
+<!-- .demo= link 'Live on the web', juniper -->
+<!--  -->
 <div class='gig'>
-  <div class='title'><a href="//static.johnmcneilstudio.com/simply_connected" target="_blank">Juniper Calculator</a></div>
-  <div class='description'>Demonstrates how much money your company can save by using Juniper.</div>
-  <div class='tech'>
-    <ul>
-      <li>Backbone.js for client-side MVC</li>
-      <li>Underscore.js for additional JavaScript functionality</li>
-      <li>Require.js for organizing dependencies</li>
-      <li>jQuery for interactive animation</li>
-      <li>jsHint to keep our code clean</li>
-      <li>Qunit for testing</li>
-      <li>Grunt build system</li>
-    </ul>
-  </div>
-  <div class='features'>
-    <ul>
-      <li>Animated slot-machine style display</li>
-      <li>Nearly instantaneous response when you click something</li>
-      <li>Incorporates real numbers from your company</li>
-      <li>Clearly shows the assumptions made for each calculation</li>
-      <li>Provides customized PDF for download</li>
-    </ul>
-  </div>
-  <div class='check'>
-    <div class='demo'><a href="//static.johnmcneilstudio.com/simply_connected" target="_blank">Live on the web</a></div>
-  </div>
-</div>
-<div class='gig'>
-  <div class='title'><a href="//hengage.com" target="_blank">H Engage</a></div>
+  <div class='title'><a href="//hengage.com" target="_blank">H Engage (2011)</a></div>
   <div class='description'>A platform for managers to communicate gamified content to employees. My big contributions were the addition of an interactive site tutorial and the creation and robustification of their game tiles.</div>
   <div class='tech'>
     <ul>
@@ -270,7 +350,7 @@
 <!-- .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo' -->
 <!--  -->
 <div id='footer'>
-  Copyright 2012-2014 Jack Desert
+  Copyright 2012-2015 Jack Desert
 </div>
     </div>
   </body>
