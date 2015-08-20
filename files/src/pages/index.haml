@@ -20,16 +20,87 @@
   jacklisted_source = '//github.com/jackdesert/jacklisted'
   hengage = '//hengage.com'
   daily_lager_source = '//github.com/jackdesert/daily_lager'
+  freecinc = '//freecinc.com'
+  freecinc_source = '//https://github.com/jackdesert/freecinc'
+  dancer = '//pdxdailydancer.com'
+  dancer_source = '//github.com/jackdesert/dailydancer'
 
 #header
   %h1 Jack Desert
   #resume= link 'r&eacute;sum&eacute;', resume
 
 #purpose
-  Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
+  / Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
+  I am very much interested in a clear, easy to use Web. A Web that:
+  .tech
+    %ul
+      %li is a joy to use,
+      %li responds quickly to my touch
+      %li gives me clear error messages
+      %li doesn't need a manual.
+  Here are some of the professional and side projects I've worked on.
+  / While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate.
 
 .gig
-  .title= link 'Flywheel App API', flywheel_iphone
+  .title Cloudability Troll (2015)
+  .description Deep dives for data anomalies between Riak and MySQL
+  .tech
+    %ul
+      %li Ruby / Pry-BybBug
+      %li Threads for heavy-handed concurrency
+      %li Sqlite / Sequel (gem) for temp data storage
+      %li Riak secondary indices to locate blocks of raw data
+      %li MySQL to locate fact tables (compiled data)
+  .features
+    %ul
+      %li For a given value of a secondary index, finds all matching data in Riak
+      %li Bulk loads preliminary data into sqlite
+      %li Concurrently fetches corresponding data from MySQL
+      %li Records whether data matches between both sources
+      %li Ability to query temp data storage to find patterns
+
+.gig
+  .title= link 'Daily Dancer (2015)', dancer
+  .description Creates a magic calendar from any list-serve using natural language parsing
+  .tech
+    %ul
+      %li Ruby/Sinatra
+      %li Sequel (gem) / sqlite3 for storage
+      %li Nokogiri for scraping external sources
+      %li Chronic for parsing dates
+      %li Redis for system stats
+      %li Pry-ByeBug for debugging
+      %li Rspec/RR for testing
+  .features
+    %ul
+      %li Extracts messages from a list-serve
+      %li Groups any message that is an event by the date of the event
+      %li No login required
+  .check
+    .source= link 'Source Code', dancer_source
+
+.gig
+  .title= link 'Freecinc (2014)', freecinc
+  .description A free hosted solution for syncing TaskWarrior clients.
+  .tech
+    %ul
+      %li Ruby/Sinatra web app
+      %li Bash to call taskserver
+      %li GoLang to test connectivity
+      %li Pry-ByeBug for debugging
+      %li Rspec/RR for testing
+  .features
+    %ul
+      %li The first hosted solution offering TaskServer to the world
+      %li Flyweight stack
+      %li Intuitive UI for easy set up of TaskWarrior clients
+      %li File export for Mirakel clients
+      %li No login required
+  .check
+    .source= link 'Source Code', freecinc_source
+
+.gig
+  .title= link 'Flywheel App API (2013)', flywheel_iphone
   /.more Hail a cab from your smart phone, and watch it drive toward you
   .description My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.
   .tech
@@ -61,7 +132,7 @@
 
 
 .gig
-  .title= link 'Daily Lager (work-in-progress, started Jan 2014)', daily_lager_source
+  .title= link 'Daily Lager (2013)', daily_lager_source
   .description Allows tracking of your own custom, statistical data about yourself via SMS or command line.
   .tech
     %ul
@@ -125,9 +196,9 @@
 /    .source= link 'Source Code', breadnbutter
 
 .gig
-  .title= link 'JohnMcNeilStudio.com', johnmcneil
+  .title= link 'JohnMcNeilStudio.com (2012)', johnmcneil
   .description Comprehensive showcase of all the artistic endeavors at John McNeil Studio
-  .tech 
+  .tech
     %ul
       %li Rails 3.2 / Postgres on Heroku
       %li Full Rspec test suite
@@ -140,7 +211,7 @@
       %li JSHint for clean JavaScript
       %li S3 and Paperclip for image hosting
       %li Isotope for stackable layout
-  .features 
+  .features
     %ul
       %li Shows off stills and videos of all the projects at JohnMcNeilStudio
       %li Displays live video feed on home page
@@ -154,37 +225,37 @@
     .demo= link 'Live on the web', johnmcneil
 
 
-.gig
-  .title= link 'Juniper Calculator', juniper
-  .description Demonstrates how much money your company can save by using Juniper.
-  .tech 
-    %ul
-      %li Backbone.js for client-side MVC
-      %li Underscore.js for additional JavaScript functionality 
-      %li Require.js for organizing dependencies
-      %li jQuery for interactive animation
-      %li jsHint to keep our code clean
-      %li Qunit for testing
-      %li Grunt build system
-  .features
-    %ul
-      %li Animated slot-machine style display
-      %li Nearly instantaneous response when you click something
-      %li Incorporates real numbers from your company
-      %li Clearly shows the assumptions made for each calculation 
-      %li Provides customized PDF for download
-  .check
-    .demo= link 'Live on the web', juniper 
-
+/  .gig
+/    .title= link 'Juniper Calculator (2012)', juniper
+/    .description Demonstrates how much money your company can save by using Juniper.
+/    .tech
+/      %ul
+/        %li Backbone.js for client-side MVC
+/        %li Underscore.js for additional JavaScript functionality
+/        %li Require.js for organizing dependencies
+/        %li jQuery for interactive animation
+/        %li jsHint to keep our code clean
+/        %li Qunit for testing
+/        %li Grunt build system
+/    .features
+/      %ul
+/        %li Animated slot-machine style display
+/        %li Nearly instantaneous response when you click something
+/        %li Incorporates real numbers from your company
+/        %li Clearly shows the assumptions made for each calculation
+/        %li Provides customized PDF for download
+/    .check
+/      .demo= link 'Live on the web', juniper
+/
 
 .gig
   .title= link 'H Engage', hengage
   .description A platform for managers to communicate gamified content to employees. My big contributions were the addition of an interactive site tutorial and the creation and robustification of their game tiles.
-  .tech 
+  .tech
     %ul
       %li Rails 3.0 -> 3.1 (made the leap!)
       %li Rspec
-      %li Postgres for user interaction 
+      %li Postgres for user interaction
       %li MongoDB for inserting and later querying arbitrary fields
       %li JavaScript
       %li Haml / Sass
@@ -205,11 +276,11 @@
 
 
 
-  
+
 /.gig
-/  .title= link 'the Grapevine (2013)', grapevine_demo 
+/  .title= link 'the Grapevine (2013)', grapevine_demo
 /  .description A simple message board using Backbone.js
-/  .tech 
+/  .tech
 /    %ul
 /      %li Backbone.js
 /      %li Rails 3.2 / Nginx / Postgres on Rackspace
@@ -231,12 +302,12 @@
 /.gig
 /  .title= link 'A Day in the Life (2012)', day_demo
 /  .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
-/  .tech 
+/  .tech
 /    %ul
 /      %li Rails 3.2 / Nginx / MongoDB on Rackspace
 /      %li CoffeeScript
-/      %li Rspec 
-/      %li eLyXer 
+/      %li Rspec
+/      %li eLyXer
 /      %li Ebooks
 /      %li Rackspace
 /  .features
@@ -248,7 +319,7 @@
 /      %li Keeps track of which entries you've read so it can feed you another one in random order (Keeps track even if you're not logged in)
 /      %li Export to Ebook (.mobi) format
 /  .check
-/    .demo 
+/    .demo
 /      = link 'Live Demo', day_demo
 /    .source
 /      %b Private Source Code:
@@ -260,7 +331,7 @@
 /.gig
 /  .title= link 'LyXBLogger (2009-2013)', lyxblogger_home
 /  .description A Python plugin for effortlessly publishing from LyX to a Wordpress blog
-/  .tech 
+/  .tech
 /    %ul
 /      %li Python 2.7
 /      %li Console App
@@ -269,8 +340,8 @@
 /      %li Unit Tests
 /      %li OO design
 /  .check
-/    .demo= link 'Home page', lyxblogger_home 
+/    .demo= link 'Home page', lyxblogger_home
 /    .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo'
 /
 #footer
-  Copyright 2012-2014 Jack Desert
+  Copyright 2012-2015 Jack Desert

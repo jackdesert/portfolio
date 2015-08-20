@@ -29,7 +29,7 @@ Publish
 -------
 <pre>
   cd portfolio
-  bundle exec staticmatic build files
+  bundle exec staticmatic build files && \
   scp -r files/site/index.html files/site/stylesheets $jj:webapps/portfolio/.
 </pre>
 
