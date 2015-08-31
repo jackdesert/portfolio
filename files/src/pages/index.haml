@@ -42,6 +42,23 @@
   / While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate.
 
 .gig
+  .title Cloudability Burnside (2015)
+  .description Data pipeline service to answer the question, "How fresh is the data?"
+  .tech
+    %ul
+      %li Hadoop Streaming via AWS EMR
+      %li Golang for processing ~60GB CSV files
+      %li S3 storage
+      %li Postgres for compiled data
+      %li Separate Golang API to access compiled data
+  .features
+    %ul
+      %li Downloads file from S3
+      %li Map function (Golang) processes CSV file to find most recent value
+      %li Result is stored in Postgres for retrieval by API
+      %li API is queryable by account and returns timestamp of most recent value
+
+.gig
   .title Cloudability Troll (2015)
   .description Deep dives for data anomalies between Riak and MySQL
   .tech
