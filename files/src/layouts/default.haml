@@ -2,7 +2,8 @@
 %html
   %head
     %title Jack Desert's Portfolio
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
     = stylesheets :reset, :screen
   %body
-    .content
+    #content
       = yield

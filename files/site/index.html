@@ -2,30 +2,64 @@
 <html>
   <head>
     <title>Jack Desert's Portfolio</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
     <link href="/stylesheets/reset.css" media="all" rel="stylesheet" type="text/css"/><link href="/stylesheets/screen.css" media="all" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div class='content'>
+    <div id='content'>
       <div id='header'>
-  <h1>Jack Desert</h1>
-  <div id='resume'><a href="//jackdesert.com/jackdesert.pdf" target="_blank">r&eacute;sum&eacute;</a></div>
-</div>
-<div id='purpose'>
-  <!-- Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work. -->
-  Committed to a clear, easy to use Web. One that:
-  <div class='tech'>
-    <ul>
-      <li>is a joy to use</li>
-      <li>responds quickly</li>
-      <li>gives clear error messages</li>
-      <li>doesn't require a manual</li>
-    </ul>
+  <h1>Portfolio</h1>
+  <!-- %h2 -->
+  <!-- by Jack Desert -->
+  <div class='contact'><a href="mailto:jackdesert@gmail.com?Subject=Cool%20Portfolio" target="_blank">jackdesert@gmail.com</a></div>
+  <!-- .contact Also available as a -->
+  <!-- .contact= link 'traditional PDF r&eacute;sum&eacute;', resume -->
+  <!-- #resume= link 'traditional PDF r&eacute;sum&eacute;', resume -->
+  <div id='purpose'>
+    <!-- Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work. -->
+    Committed to a clear, easy to use Web. One that:
+    <div class='tech'>
+      <ul>
+        <li>is a joy to use</li>
+        <li>responds quickly</li>
+        <li>gives clear error messages</li>
+        <li>doesn't require a manual</li>
+      </ul>
+    </div>
+    <div id='signature'>-- Jack Desert</div>
+    Here are some of the professional and side projects I've worked on. Or, download my
+    <a href="//jackdesert.com/jackdesert.pdf" target="_blank">traditional PDF r&eacute;sum&eacute;</a>
+    <!-- While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate. -->
   </div>
-  Here are some of the professional and side projects I've worked on.
-  <!-- While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate. -->
 </div>
 <div class='gig'>
-  <div class='title'>Cloudability Burnside (2015)</div>
+  <h2 class='title'><a href="//whatwasthatword.com" target="_blank">Dickshunary (2015)</a></h2>
+  <div class='description'>A dictionary that remembers words you've recently needed</div>
+  <div class='tech'>
+    <ul>
+      <li>Python3 / Flask webapp</li>
+      <li>ReactJS</li>
+      <li>Redis for storage</li>
+      <li>lxml for parsing xml</li>
+    </ul>
+  </div>
+  <div class='features'>
+    <ul>
+      <li>Single Page application</li>
+      <li>Pulls data from Merriam-Webster's API</li>
+      <li>Remembers up to 100 words each user has needed</li>
+      <li>No login required---users delineated by IP address</li>
+      <li>Includes audio pronunciations</li>
+      <li>Groups definitions by their part-of-speech</li>
+    </ul>
+  </div>
+  <div class='check'>
+    <div class='demo'><a href="//whatwasthatword.com" target="_blank">Live on the web</a></div>
+    <div class='source'><a href="//github.com/jackdesert/dickshunary" target="_blank">Source Code</a></div>
+  </div>
+</div>
+<div class='gig'>
+  <h2 class='title'>Cloudability Burnside (2015)</h2>
   <div class='description'>Data pipeline service to answer the question, "How fresh is the data?"</div>
   <div class='tech'>
     <ul>
@@ -46,7 +80,7 @@
   </div>
 </div>
 <div class='gig'>
-  <div class='title'>Cloudability Troll (2015)</div>
+  <h2 class='title'>Cloudability Troll (2015)</h2>
   <div class='description'>Deep dives for data anomalies between Riak and MySQL</div>
   <div class='tech'>
     <ul>
@@ -68,7 +102,7 @@
   </div>
 </div>
 <div class='gig'>
-  <div class='title'><a href="//pdxdailydancer.com" target="_blank">Daily Dancer (2015)</a></div>
+  <h2 class='title'><a href="//pdxdailydancer.com" target="_blank">Daily Dancer (2015)</a></h2>
   <div class='description'>Creates a magic calendar from any list-serve using natural language parsing</div>
   <div class='tech'>
     <ul>
@@ -94,7 +128,7 @@
   </div>
 </div>
 <div class='gig'>
-  <div class='title'><a href="//freecinc.com" target="_blank">Freecinc (2014)</a></div>
+  <h2 class='title'><a href="//freecinc.com" target="_blank">Freecinc (2014)</a></h2>
   <div class='description'>A free hosted solution for syncing TaskWarrior clients.</div>
   <div class='tech'>
     <ul>
@@ -120,7 +154,7 @@
   </div>
 </div>
 <div class='gig'>
-  <div class='title'><a href="//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8" target="_blank">Flywheel App API (2013)</a></div>
+  <h2 class='title'><a href="//itunes.apple.com/us/app/flywheel/id584165682?ls=1&mt=8" target="_blank">Flywheel App API (2013)</a></h2>
   <!-- .more Hail a cab from your smart phone, and watch it drive toward you -->
   <div class='description'>My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.</div>
   <div class='tech'>
@@ -156,7 +190,7 @@
   </div>
 </div>
 <div class='gig'>
-  <div class='title'><a href="//github.com/jackdesert/daily_lager" target="_blank">Daily Lager (2013)</a></div>
+  <h2 class='title'>Daily Lager (2013)</h2>
   <div class='description'>Allows tracking of your own custom, statistical data about yourself via SMS or command line.</div>
   <div class='tech'>
     <ul>
@@ -182,7 +216,7 @@
   </div>
 </div>
 <!-- .gig -->
-<!-- .title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home -->
+<!-- %h2.title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home -->
 <!-- .description This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter. -->
 <!-- .tech -->
 <!-- %ul -->
@@ -204,7 +238,7 @@
 <!-- .source= link 'Live on the Web', jacklisted_home, target: '_blank' -->
 <!-- .source= link 'Source Code', jacklisted_source -->
 <!-- .gig -->
-<!-- .title= link 'BreadnButter (2013)', breadnbutter -->
+<!-- %h2.title= link 'BreadnButter (2013)', breadnbutter -->
 <!-- .description The Simplest Way to add Breadcrumbs to Your Site -->
 <!-- .more While other solutions for breadcrumbs require you to specify explicitly what text to display, what model to link to, etc., BreadnButter assumes RESTful routes and figures out the rest by itself. -->
 <!-- .tech -->
@@ -219,7 +253,7 @@
 <!-- .check -->
 <!-- .source= link 'Source Code', breadnbutter -->
 <div class='gig'>
-  <div class='title'><a href="//johnmcneilstudio.com" target="_blank">JohnMcNeilStudio.com (2012)</a></div>
+  <h2 class='title'><a href="//johnmcneilstudio.com" target="_blank">JohnMcNeilStudio.com (2012)</a></h2>
   <div class='description'>Comprehensive showcase of all the artistic endeavors at John McNeil Studio</div>
   <div class='tech'>
     <ul>
@@ -253,7 +287,7 @@
   </div>
 </div>
 <!-- .gig -->
-<!-- .title= link 'Juniper Calculator (2012)', juniper -->
+<!-- %h2.title= link 'Juniper Calculator (2012)', juniper -->
 <!-- .description Demonstrates how much money your company can save by using Juniper. -->
 <!-- .tech -->
 <!-- %ul -->
@@ -275,7 +309,7 @@
 <!-- .demo= link 'Live on the web', juniper -->
 <!--  -->
 <div class='gig'>
-  <div class='title'><a href="//hengage.com" target="_blank">H Engage (2011)</a></div>
+  <h2 class='title'><a href="//airbo.com" target="_blank">Airbo (2011)</a></h2>
   <div class='description'>A platform for managers to communicate gamified content to employees. My big contributions were the addition of an interactive site tutorial and the creation and robustification of their game tiles.</div>
   <div class='tech'>
     <ul>
@@ -301,11 +335,11 @@
     </ul>
   </div>
   <div class='check'>
-    <div class='demo'><a href="//hengage.com" target="_blank">Live on the web</a></div>
+    <div class='demo'><a href="//airbo.com" target="_blank">Live on the web</a></div>
   </div>
 </div>
 <!-- .gig -->
-<!-- .title= link 'the Grapevine (2013)', grapevine_demo -->
+<!-- %h2.title= link 'the Grapevine (2013)', grapevine_demo -->
 <!-- .description A simple message board using Backbone.js -->
 <!-- .tech -->
 <!-- %ul -->
@@ -327,7 +361,7 @@
 <!--  -->
 <!--  -->
 <!-- .gig -->
-<!-- .title= link 'A Day in the Life (2012)', day_demo -->
+<!-- %h2.title= link 'A Day in the Life (2012)', day_demo -->
 <!-- .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book. -->
 <!-- .tech -->
 <!-- %ul -->
@@ -356,7 +390,7 @@
 <!-- %li password: h9m7xa11e -->
 <!--  -->
 <!-- .gig -->
-<!-- .title= link 'LyXBLogger (2009-2013)', lyxblogger_home -->
+<!-- %h2.title= link 'LyXBLogger (2009-2013)', lyxblogger_home -->
 <!-- .description A Python plugin for effortlessly publishing from LyX to a Wordpress blog -->
 <!-- .tech -->
 <!-- %ul -->
@@ -371,7 +405,15 @@
 <!-- .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo' -->
 <!--  -->
 <div id='footer'>
-  Copyright 2012-2015 Jack Desert
+  <div class='copyright'>Copyright 2012-2015 Jack Desert</div>
+  <div><a href="mailto:jackdesert@gmail.com?Subject=Cool%20Portfolio" target="_blank">jackdesert@gmail.com</a></div>
+  <div><a href="//jackdesert.com/jackdesert.pdf" target="_blank">traditional resume</a></div>
+  <div><a href="//github.com/jackdesert" target="_blank">GitHub account</a></div>
+  <!-- %div (two oh eight) three six six - six oh faive niner -->
+  <div>
+    (2O8) 366-6O59
+  </div>
+  <div>Have a nice day!</div>
 </div>
     </div>
   </body>

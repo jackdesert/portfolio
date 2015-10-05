@@ -1,119 +1,123 @@
-/* line 24 */
-* {
-  font-family: Verdana;
-  font-size: 16px;
-  color: #111122;
-  border-radius: 10px;
-  line-height: 1.3;
+/* line 19 */
+body {
+  background-color: #0a083a;
 }
 
-/* line 31 */
+/* line 23 */
+div, input {
+  border-radius: 0.5rem;
+}
+
+/* line 27 */
 a {
   display: inline-block;
-  color: #5555dd;
+  color: #9999ff;
   font-style: italic;
   font-weight: bold;
-  text-decoration: none;
   margin-bottom: 0;
 }
-/* line 38 */
+/* line 34 */
 a:hover {
-  font-size: 105%;
+  font-size: 110%;
   font-weight: bold;
-  margin-bottom: -1px;
+  margin-bottom: -0.05rem;
+}
+
+/* line 40 */
+ul {
+  margin-left: 2.2rem;
 }
 
 /* line 43 */
-ul {
-  margin-left: 34px;
-  padding: 2px 0 10px;
-  width: 70ex;
-}
-/* line 47 */
-ul li {
-  color: #aaaaaa;
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* line 49 */
-li + li {
-  padding-top: 2px !important;
+#header h1, #header h2, #header h3, #header h4, #header div, #header ul, #header li {
+  color: #eeeeee;
 }
-
-/* line 51 */
-body {
-  font-family: Verdana;
-  font-size: 10pt;
-  background-color: #0a083a;
-}
-
-/* line 57 */
-.content {
-  background-color: #0a083a;
-  width: 800px;
-  margin: 0 auto;
-}
-
-/* line 62 */
-#header {
-  position: relative;
-}
-/* line 64 */
-#header #resume {
-  padding: 4px 13px 7px;
-  background-color: #e5e5ff;
-  position: absolute;
-  right: 30px;
-  bottom: -3px;
-  font-size: 16px;
-}
-
-/* line 74 */
-h1, h2, h3 {
+/* line 52 */
+#header h1 {
+  font-size: 2rem;
   font-weight: bold;
 }
-
-/* line 77 */
-h1 {
-  font-size: 23px;
+/* line 56 */
+#header h1, #header .contact {
   text-align: center;
-  color: #aaaaaa;
-  padding-top: 20px;
+  position: relative;
+}
+/* line 59 */
+#header ul {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  max-width: 70rem;
+}
+/* line 63 */
+#header li + li {
+  padding-top: 0.2rem;
 }
 
-/* line 83 */
+/* line 68 */
+#purpose #signature {
+  padding-bottom: 2rem;
+  padding-left: 17rem;
+}
+
+/* line 73 */
 #purpose, #footer {
-  color: #aaaaaa;
+  color: #eeeeee;
   margin: 0 auto;
-  padding-top: 15px;
-  width: 511px;
-  font-size: 16px;
-  padding-bottom: 3px;
+  padding-top: 1rem;
+  max-width: 30rem;
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
 }
 
-/* line 91 */
+/* line 81 */
 #footer {
   text-align: center;
-  padding-bottom: 41px;
+  padding-bottom: 2rem;
+}
+/* line 84 */
+#footer .copyright {
+  padding-bottom: 1rem;
+}
+/* line 86 */
+#footer div {
+  line-height: 1.4;
 }
 
-/* line 96 */
+/* line 90 */
 .gig {
-  padding: 10px;
+  color: #111122;
+  margin-top: 1.5rem;
+  padding: 1rem;
   background-color: #e5e5ff;
-  margin: 27px;
+}
+/* line 93 */
+.gig .description {
+  padding-top: 0.5rem;
+}
+/* line 95 */
+.gig .tech, .gig .features, .gig .description, .gig .check {
+  font-size: 1rem;
 }
 /* line 97 */
-.gig .tech, .gig .features, .gig .description, .gig .check {
-  font-size: 16px;
-}
-/* line 99 */
 .gig .more {
-  padding: 10px;
+  padding: 1rem;
 }
-/* line 104 */
+/* line 101 */
+.gig a {
+  color: #5555f8;
+}
+/* line 103 */
 .gig .title {
-  font-size: 22px;
-  height: 38px;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.15;
 }
 /* line 107 */
 .gig .tech:before {
@@ -125,12 +129,12 @@ h1 {
 }
 /* line 111 */
 .gig .features, .gig .tech {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 /* line 113 */
 .gig .features:first-line, .gig .tech:first-line, .gig .check:first-line {
   font-weight: bold;
-  font-size: 110%;
+  font-size: 1.3rem;
 }
 /* line 116 */
 .gig .check:before {
@@ -138,19 +142,32 @@ h1 {
 }
 /* line 119 */
 .gig .check .note {
-  padding-left: 10px;
-  font-size: 90%;
+  padding-left: 1rem;
+  font-size: 0.9rem;
 }
 /* line 122 */
 .gig .check .demo {
-  padding-top: 5px;
+  padding-top: 0.5rem;
 }
 /* line 124 */
 .gig .check .demo, .gig .check .source {
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 /* line 126 */
 .gig .check .source ul {
   list-style: none;
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
+
+/* Medium and large screens */
+@media screen and (min-width: 769px) {
+  /* line 132 */
+  #content {
+    padding-top: 4rem;
+  }
+  /* line 134 */
+  #content h1 {
+    font-size: 3rem;
+  }
+}
+/* Large screens */

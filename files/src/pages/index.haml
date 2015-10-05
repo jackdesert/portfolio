@@ -3,6 +3,7 @@
     super(text, url, target: '_blank')
   end
 
+  github = '//github.com/jackdesert'
   johnmcneil = '//johnmcneilstudio.com'
   juniper = '//static.johnmcneilstudio.com/simply_connected'
   grapevine_demo = '//grapevine.jackdesert.com'
@@ -18,31 +19,64 @@
   resume = '//jackdesert.com/jackdesert.pdf'
   jacklisted_home = '//portland.jacklisted.com'
   jacklisted_source = '//github.com/jackdesert/jacklisted'
-  hengage = '//hengage.com'
+  airbo = '//airbo.com'
   daily_lager_source = '//github.com/jackdesert/daily_lager'
   freecinc = '//freecinc.com'
   freecinc_source = '//github.com/jackdesert/freecinc'
   dancer = '//pdxdailydancer.com'
   dancer_source = '//github.com/jackdesert/dailydancer'
+  dickshunary = '//whatwasthatword.com'
+  dickshunary_source = '//github.com/jackdesert/dickshunary'
 
 #header
-  %h1 Jack Desert
-  #resume= link 'r&eacute;sum&eacute;', resume
+  %h1 Portfolio
+  /%h2
+  /  by Jack Desert
+  .contact= link 'jackdesert@gmail.com', 'mailto:jackdesert@gmail.com?Subject=Cool%20Portfolio'
+  /.contact Also available as a
+  /.contact= link 'traditional PDF r&eacute;sum&eacute;', resume
 
-#purpose
-  / Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
-  Committed to a clear, easy to use Web. One that:
-  .tech
-    %ul
-      %li is a joy to use
-      %li responds quickly
-      %li gives clear error messages
-      %li doesn't require a manual
-  Here are some of the professional and side projects I've worked on.
-  / While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate.
+  / #resume= link 'traditional PDF r&eacute;sum&eacute;', resume
+
+  #purpose
+    / Committed to building clear, intuitive front ends and robust, capable back ends. Here are some examples of my work.
+    Committed to a clear, easy to use Web. One that:
+    .tech
+      %ul
+        %li is a joy to use
+        %li responds quickly
+        %li gives clear error messages
+        %li doesn't require a manual
+
+    #signature -- Jack Desert
+
+    Here are some of the professional and side projects I've worked on. Or, download my
+    = link 'traditional PDF r&eacute;sum&eacute;', resume
+    / While much of the code I have worked on professionally is proprietary, you will notice a pattern in my side projects: they are uncluttered and simple to navigate.
 
 .gig
-  .title Cloudability Burnside (2015)
+  %h2.title= link('Dickshunary (2015)', dickshunary)
+  .description A dictionary that remembers words you've recently needed
+  .tech
+    %ul
+      %li Python3 / Flask webapp
+      %li ReactJS
+      %li Redis for storage
+      %li lxml for parsing xml
+  .features
+    %ul
+      %li Single Page application
+      %li Pulls data from Merriam-Webster's API
+      %li Remembers up to 100 words each user has needed
+      %li No login required---users delineated by IP address
+      %li Includes audio pronunciations
+      %li Groups definitions by their part-of-speech
+  .check
+    .demo= link 'Live on the web', dickshunary
+    .source= link 'Source Code', dickshunary_source
+
+.gig
+  %h2.title Cloudability Burnside (2015)
   .description Data pipeline service to answer the question, "How fresh is the data?"
   .tech
     %ul
@@ -59,7 +93,7 @@
       %li API is queryable by account and returns timestamp of most recent value
 
 .gig
-  .title Cloudability Troll (2015)
+  %h2.title Cloudability Troll (2015)
   .description Deep dives for data anomalies between Riak and MySQL
   .tech
     %ul
@@ -77,7 +111,7 @@
       %li Ability to query temp data storage to find patterns
 
 .gig
-  .title= link 'Daily Dancer (2015)', dancer
+  %h2.title= link 'Daily Dancer (2015)', dancer
   .description Creates a magic calendar from any list-serve using natural language parsing
   .tech
     %ul
@@ -98,7 +132,7 @@
     .source= link 'Source Code', dancer_source
 
 .gig
-  .title= link 'Freecinc (2014)', freecinc
+  %h2.title= link 'Freecinc (2014)', freecinc
   .description A free hosted solution for syncing TaskWarrior clients.
   .tech
     %ul
@@ -119,7 +153,7 @@
     .source= link 'Source Code', freecinc_source
 
 .gig
-  .title= link 'Flywheel App API (2013)', flywheel_iphone
+  %h2.title= link 'Flywheel App API (2013)', flywheel_iphone
   /.more Hail a cab from your smart phone, and watch it drive toward you
   .description My role on the Flywheel server team included making portions of the app geo-aware. For example, what fare structures get displayed to a user based on where in the world the Flywheel app is opened. My work also provided the back-end logic for displaying display special alerts when a livery vehicle was substituted for a regular taxi during peak usage times.
   .tech
@@ -151,7 +185,7 @@
 
 
 .gig
-  .title= link 'Daily Lager (2013)', daily_lager_source
+  %h2.title Daily Lager (2013)
   .description Allows tracking of your own custom, statistical data about yourself via SMS or command line.
   .tech
     %ul
@@ -174,7 +208,7 @@
 
 
 /.gig
-/  .title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home
+/  %h2.title= link 'JackListed.com (work-in-progress, started Dec 2013)', jacklisted_home
 /  .description This site is currently being built in my spare time as a platform of information sharing among job seekers. The barrier to entry has been kept just millimeters high by not requiring a login at all. Yet there are several methods in place to prevent spam and clutter.
 /  .tech
 /    %ul
@@ -199,7 +233,7 @@
 
 
 /.gig
-/  .title= link 'BreadnButter (2013)', breadnbutter
+/  %h2.title= link 'BreadnButter (2013)', breadnbutter
 /  .description The Simplest Way to add Breadcrumbs to Your Site
 /  .more While other solutions for breadcrumbs require you to specify explicitly what text to display, what model to link to, etc., BreadnButter assumes RESTful routes and figures out the rest by itself.
 /  .tech
@@ -215,7 +249,7 @@
 /    .source= link 'Source Code', breadnbutter
 
 .gig
-  .title= link 'JohnMcNeilStudio.com (2012)', johnmcneil
+  %h2.title= link 'JohnMcNeilStudio.com (2012)', johnmcneil
   .description Comprehensive showcase of all the artistic endeavors at John McNeil Studio
   .tech
     %ul
@@ -245,7 +279,7 @@
 
 
 /  .gig
-/    .title= link 'Juniper Calculator (2012)', juniper
+/    %h2.title= link 'Juniper Calculator (2012)', juniper
 /    .description Demonstrates how much money your company can save by using Juniper.
 /    .tech
 /      %ul
@@ -268,7 +302,7 @@
 /
 
 .gig
-  .title= link 'H Engage (2011)', hengage
+  %h2.title= link 'Airbo (2011)', airbo
   .description A platform for managers to communicate gamified content to employees. My big contributions were the addition of an interactive site tutorial and the creation and robustification of their game tiles.
   .tech
     %ul
@@ -290,14 +324,14 @@
       %li Generates reports of user activity
       %li Encourages users to keep playing
   .check
-    .demo= link 'Live on the web', hengage
+    .demo= link 'Live on the web', airbo
 
 
 
 
 
 /.gig
-/  .title= link 'the Grapevine (2013)', grapevine_demo
+/  %h2.title= link 'the Grapevine (2013)', grapevine_demo
 /  .description A simple message board using Backbone.js
 /  .tech
 /    %ul
@@ -319,7 +353,7 @@
 /
 /
 /.gig
-/  .title= link 'A Day in the Life (2012)', day_demo
+/  %h2.title= link 'A Day in the Life (2012)', day_demo
 /  .description A platform for organizing and sharing your life stories. Allows consumption from a web platform or as a e-book.
 /  .tech
 /    %ul
@@ -348,7 +382,7 @@
 /        %li password: h9m7xa11e
 /
 /.gig
-/  .title= link 'LyXBLogger (2009-2013)', lyxblogger_home
+/  %h2.title= link 'LyXBLogger (2009-2013)', lyxblogger_home
 /  .description A Python plugin for effortlessly publishing from LyX to a Wordpress blog
 /  .tech
 /    %ul
@@ -363,4 +397,11 @@
 /    .source= link 'Source Code', '//github.com/jackdesert/lyxblogger_oo'
 /
 #footer
-  Copyright 2012-2015 Jack Desert
+  .copyright Copyright 2012-2015 Jack Desert
+  %div= link 'jackdesert@gmail.com', 'mailto:jackdesert@gmail.com?Subject=Cool%20Portfolio'
+  %div= link 'traditional resume', resume
+  %div= link 'GitHub account', github
+  /%div (two oh eight) three six six - six oh faive niner
+  %div
+    (2O8) 366-6O59
+  %div Have a nice day!

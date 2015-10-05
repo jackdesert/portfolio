@@ -8,122 +8,134 @@ $footer_black: #0e0b60
 // Text colors
 $dark_text: #112
 $medium_text: #888
-$light_text: #aaa
+$light_text: #eee
 $link_text: #aaa
 
 // Padding
-$med_pad: 10px
-$small_pad: 6px
-$large_pad: 20px
+$med_pad: 1rem
+$small_pad: 0.5rem
+$large_pad: 2rem
 
-// Offsets
-$column_top: 73px
+body
+  background-color: $nearly_black_background
 
 
+div,input
+  border-radius: 0.5rem
 
-*
-  font:
-    family: Verdana
-    size: 16px
-  color: $dark_text
-  border-radius: $med_pad
-  line-height: 1.3
+
 a
   display: inline-block
-  color: #55D
+  color: #99f
   font-style: italic
   font-weight: bold
-  text-decoration: none
+  //text-decoration: none
   margin-bottom: 0
   &:hover
-    font-size: 105%
+    font-size: 110%
     font-weight: bold
-    margin-bottom: -1px
+    margin-bottom: -0.05rem
+
 
 ul
-  margin-left: 34px
-  padding: 2px 0 10px
-  width: 70ex
-  li
-    color: $light_text
-li + li
-  padding-top: 2px !important
-body
-  font:
-    family: Verdana
-    size: 10pt
-  background-color: $nearly_black_background
+  margin-left: 2.2rem
 
-.content
-  background-color: $nearly_black_background
-  width: 800px
+#content
+  max-width: 800px
   margin: 0 auto
+  padding: 1rem
 
 #header
-  position: relative
-  #resume
-    padding: 4px 13px 7px
-    background-color: $light_background
-    position: absolute
-    right: 30px
-    bottom: -3px
-    font-size: 16px
+  h1, h2, h3, h4, div, ul, li
+    color: $light_text
+
+  h1
+    font-size: 2rem
+    font-weight: bold
+
+  h1, .contact
+    text-align: center
+    position: relative
+  ul
+    padding-bottom: 1rem
+    padding-top: 0.5rem
+    max-width: 70rem
+  li + li
+    padding-top: 0.2rem
 
 
+#purpose
+  #signature
+    padding-bottom: 2rem
+    padding-left: 17rem
 
-h1, h2, h3
-  font-weight: bold
-
-h1
-  font-size: 23px
-  text-align: center
-  color: $light_text
-  padding-top: 20px
 
 #purpose, #footer
   color: $light_text
   margin: 0 auto
-  padding-top: 15px
-  width: 511px
-  font-size: 16px
-  padding-bottom: 3px
+  padding-top: 1rem
+  max-width: 30rem
+  font-size: 1rem
+  padding-bottom: 0.3rem
 
 #footer
   text-align: center
-  padding-bottom: 41px
+  padding-bottom: 2rem
+  .copyright
+    padding-bottom: 1rem
+  div
+    line-height: 1.4
 
 
 .gig
+  color: $dark_text
+  margin-top: 1.5rem
+  .description
+    padding-top: 0.5rem
   .tech, .features, .description, .check
-    font-size: 16px
+    font-size: 1rem
   .more
     padding: $med_pad
-  padding: $med_pad
+  padding: 1rem
   background-color: $light_background
-  margin: 27px
+  a
+    color: #5555f8
   .title
-    font-size: 22px
-    height: 38px
+    font-size: 2rem
+    padding-bottom: 0.5rem
+    line-height: 1.15
   .tech:before
     content: 'Technologies'
   .features:before
     content: 'Features'
   .features, .tech
-    padding-top: 10px
+    padding-top: 1rem
   .features:first-line, .tech:first-line, .check:first-line
     font-weight: bold
-    font-size: 110%
+    font-size: 1.3rem
   .check:before
     content: 'Check it Out'
   .check
     .note
-      padding-left: 10px
-      font-size: 90%
+      padding-left: 1rem
+      font-size: 0.9rem
     .demo
-      padding-top: 5px
+      padding-top: 0.5rem
     .demo, .source
-      padding-left: 10px
+      padding-left: 1rem
     .source ul
       list-style: none
-      margin-left: 15px
+      margin-left: 1.5rem
 
+/* Medium and large screens */
+@media screen and (min-width: 769px)
+  #content
+    padding-top: 4rem
+    h1
+      font-size: 3rem
+
+
+
+
+/* Large screens */
+@media screen and (min-width: 1000px)
