@@ -27,6 +27,7 @@
   dancer_source = '//github.com/jackdesert/dailydancer'
   dickshunary = '//whatwasthatword.com'
   dickshunary_source = '//github.com/jackdesert/dickshunary'
+  cloudability = '//cloudability.com'
 
 #header
   %h1 Portfolio
@@ -76,7 +77,7 @@
     .source= link 'Source Code', dickshunary_source
 
 .gig
-  %h2.title Cloudability Burnside (2015)
+  %h2.title= link 'Cloudability Burnside (2015)', cloudability
   .description Data pipeline service to answer the question, "How fresh is the data?"
   .tech
     %ul
@@ -91,9 +92,11 @@
       %li Map function (Golang) processes CSV file to find most recent value
       %li Result is stored in Postgres for retrieval by API
       %li API is queryable by account and returns timestamp of most recent value
+  .check
+    .source= link 'Cloudability Home Page', cloudability
 
 .gig
-  %h2.title Cloudability Troll (2015)
+  %h2.title= link 'Cloudability Troll (2015)', cloudability
   .description Deep dives for data anomalies between Riak and MySQL
   .tech
     %ul
@@ -109,6 +112,8 @@
       %li Concurrently fetches corresponding data from MySQL
       %li Records whether data matches between both sources
       %li Ability to query temp data storage to find patterns
+  .check
+    .source= link 'Cloudability Home Page', cloudability
 
 .gig
   %h2.title= link 'Daily Dancer (2015)', dancer

@@ -18,55 +18,53 @@ a {
 }
 /* line 34 */
 a:hover {
-  font-size: 110%;
-  font-weight: bold;
-  margin-bottom: -0.05rem;
+  color: #8888ee;
 }
 
-/* line 40 */
+/* line 38 */
 ul {
   margin-left: 2.2rem;
 }
 
-/* line 43 */
+/* line 41 */
 #content {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* line 49 */
+/* line 47 */
 #header h1, #header h2, #header h3, #header h4, #header div, #header ul, #header li {
   color: #eeeeee;
 }
-/* line 52 */
+/* line 50 */
 #header h1 {
   font-size: 2rem;
   font-weight: bold;
 }
-/* line 56 */
+/* line 54 */
 #header h1, #header .contact {
   text-align: center;
   position: relative;
 }
-/* line 59 */
+/* line 57 */
 #header ul {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
   max-width: 70rem;
 }
-/* line 63 */
+/* line 61 */
 #header li + li {
   padding-top: 0.2rem;
 }
 
-/* line 68 */
+/* line 66 */
 #purpose #signature {
   padding-bottom: 2rem;
   padding-left: 17rem;
 }
 
-/* line 73 */
+/* line 71 */
 #purpose, #footer {
   color: #eeeeee;
   margin: 0 auto;
@@ -76,42 +74,46 @@ ul {
   padding-bottom: 0.3rem;
 }
 
-/* line 81 */
+/* line 79 */
 #footer {
   text-align: center;
   padding-bottom: 2rem;
 }
-/* line 84 */
+/* line 82 */
 #footer .copyright {
   padding-bottom: 1rem;
 }
-/* line 86 */
+/* line 84 */
 #footer div {
   line-height: 1.4;
 }
 
-/* line 90 */
+/* line 88 */
 .gig {
   color: #111122;
   margin-top: 1.5rem;
   padding: 1rem;
   background-color: #e5e5ff;
 }
-/* line 93 */
+/* line 91 */
 .gig .description {
   padding-top: 0.5rem;
 }
-/* line 95 */
+/* line 93 */
 .gig .tech, .gig .features, .gig .description, .gig .check {
   font-size: 1rem;
 }
-/* line 97 */
+/* line 95 */
 .gig .more {
   padding: 1rem;
 }
-/* line 101 */
+/* line 99 */
 .gig a {
   color: #5555f8;
+}
+/* line 101 */
+.gig a:hover {
+  color: #4444c8;
 }
 /* line 103 */
 .gig .title {
@@ -128,7 +130,7 @@ ul {
   content: "Features";
 }
 /* line 111 */
-.gig .features, .gig .tech {
+.gig .features, .gig .tech, .gig .check {
   padding-top: 1rem;
 }
 /* line 113 */
